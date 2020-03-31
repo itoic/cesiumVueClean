@@ -26,3 +26,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### 相关说明
 1. 主要安装的依赖有三个 webpack、cesium、copy-webpack-plugin 这三个依赖包
 2. 然后是配置config文件，相关注释也说明了
+3. 如果是第一次运行报'Cesium' is not defined就把运行关掉再运行一次，打包也是同理
