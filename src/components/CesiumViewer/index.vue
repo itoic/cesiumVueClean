@@ -1,15 +1,27 @@
+<!--
+ * @Author: your name
+ * @Date: 2019-12-06 10:13:54
+ * @LastEditTime: 2020-05-19 13:54:25
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \cesiumVueClean\src\components\CesiumViewer\index.vue
+--> 
 <template>
   <div class="hello">
     <div id="cesiumContainer"></div>
   </div>
 </template>
 
-<script> 
+<script>
 export default {
-  name: "CesiumViewer", 
+  name: "CesiumViewer",
+  data(){
+    return{
+      viewer:null
+    }
+  },
   mounted() {
-    // var viewer = new Cesium.CesiumWidget('cesiumContainer')
-    var viewer = new Cesium.Viewer("cesiumContainer");
+     this.viewer =  this.Cesium.Viewer("cesiumContainer");  
   }
 };
 </script> 
