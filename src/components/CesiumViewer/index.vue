@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2019-12-06 10:13:54
- * @LastEditTime: 2020-05-19 13:54:25
+ * @LastEditTime: 2020-05-20 09:45:09
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \cesiumVueClean\src\components\CesiumViewer\index.vue
@@ -21,7 +21,7 @@ export default {
     }
   },
   mounted() {
-     this.viewer =  this.Cesium.Viewer("cesiumContainer");  
+     this.viewer = new this.Cesium.Viewer("cesiumContainer");  
   }
 };
 </script> 
